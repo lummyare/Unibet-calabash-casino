@@ -64,6 +64,7 @@ Then(/^Log in should be successful$/) do
   if
   element_exists "CircleIndicator"
     puts 'Circle indicator is visible'
+    sleep 2
   end
 
 end
