@@ -3,7 +3,15 @@ module TestModule
   def initialize_all
     @page||=BasePage.new
     @loginPage||=LogInPage.new
-    @welcomePage||=WelcomePage.new
-    @setupPage||=SetupPage.new
+    @allgamesPage||=AllGamesPage.new
+    @exclusivegamesPage||=ExclusiveGamesPage.new
+    @jackpotsgamesPage||=JackpotsGamesPage.new
+    @newgamesPage||=NewGamesPage.new
+    @unibetfavgamesPage||=UnibetFavGamesPage.new
+    @unibetpicksPage||=UnibetPicksPage.new
+    @gamesPage||=GamesPage.new
+
+
+
   end
 end
