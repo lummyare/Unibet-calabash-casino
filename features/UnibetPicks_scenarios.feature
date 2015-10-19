@@ -29,3 +29,4 @@ Feature: Unibet picks game launch
     And I rotate device right
     When I launch game1 in Unibet Picks
     Then I close game1 after a successful launch
+
