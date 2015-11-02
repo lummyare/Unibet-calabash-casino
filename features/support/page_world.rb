@@ -10,6 +10,10 @@ module TestModule
     @unibetfavgamesPage||=UnibetFavGamesPage.new
     @unibetpicksPage||=UnibetPicksPage.new
     @gamesPage||=GamesPage.new
+    @tableandcardsPage||=TableAndCardsPage.new
+    @overallfavouritesPage||=OverallFavouritesPage.new
+    @biggestwinsalltimePage||=BiggestWinsAllTimePage.new
+    @biggestwinsweeklyPage||=BiggestWinsWeeklyPage.new
 
 
 

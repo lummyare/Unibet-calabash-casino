@@ -93,3 +93,4 @@ end
 Then(/^I close NGgame12 after a successful launch$/) do
   @newgamesPage.close_NGgame_12
 end
+

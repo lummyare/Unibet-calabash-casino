@@ -2,9 +2,13 @@ require_relative '../base_page'
 
 class NewGamesPage < BasePage
   def launch_NGgame_1
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::110009@nyx', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::zeus1000@jadestone'"
-    sleep 2
+    touch "* marked:'casino-app-new-games-7-579352::110009@nyx'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 1
   end
 
   def close_NGgame_1
@@ -12,14 +16,18 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_2
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::70145@nyx', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::110007@nyx'"
-    sleep 2
+    touch "* marked:'casino-app-new-games-7-579352::70145@nyx'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 1
   end
 
   def close_NGgame_2
@@ -27,14 +35,18 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_3
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::machineGunUnicorn@mg', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::110009@nyx'"
-    sleep 2
+    touch "* marked:'casino-app-new-games-7-579352::machineGunUnicorn@mg'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 1
   end
 
   def close_NGgame_3
@@ -42,14 +54,23 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_4
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::hooksheroes_mobile_html@netent', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::70143@nyx'"
-    sleep 2
+    touch "* marked:'casino-app-new-games-7-579352::hooksheroes_mobile_html@netent'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    wait_for_element_exists "webView css:'.interface-toggleSwitch_loadAnimation'", :timeout => 10
+
+    touch ("webView css:'.interface-toggleSwitch_loadAnimation'")
+    sleep 3
+    touch "webView css:'.interface-homeButton_baseButton'"
+    sleep 0.5
   end
 
   def close_NGgame_4
@@ -57,15 +78,17 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_5
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::eyeofthekrakenmobile@playngo', {:scroll_position => :right})
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::crystalqueen@relax', {:scroll_position => :right})
+    touch "* marked:'casino-app-new-games-7-579352::eyeofthekrakenmobile@playngo'"
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::crystalqueen@relax'"
+    touch "* marked:'Play for Fun'"
     sleep 1
   end
 
@@ -74,15 +97,18 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
+
   def launch_NGgame_6
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::happyhalloweenmobile@playngo', {:scroll_position => :right})
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::70145@nyx', {:scroll_position => :right})
+    touch "* marked:'casino-app-new-games-7-579352::happyhalloweenmobile@playngo'"
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::70145@nyx'"
+    touch "* marked:'Play for Fun'"
     sleep 1
   end
 
@@ -91,16 +117,23 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_7
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::pyramid_mobile_html@netent', {:scroll_position => :right})
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::wildnorth@playngo', {:scroll_position => :right})
+    touch "* marked:'casino-app-new-games-7-579352::pyramid_mobile_html@netent'"
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::wildnorth@playngo'"
-    sleep 1
+    touch "* marked:'Play for Fun'"
+    wait_for_element_exists "webView css:'.interface-toggleSwitch_loadAnimation'", :timeout => 10
+
+    touch ("webView css:'.interface-toggleSwitch_loadAnimation'")
+    sleep 3
+    touch "webView css:'.interface-homeButton_baseButton'"
+    sleep 0.5
   end
 
   def close_NGgame_7
@@ -108,15 +141,17 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 
   def launch_NGgame_8
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::escapeartist@relax', {:scroll_position => :right})
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::MachineGunUnicorn@mg', {:scroll_position => :right})
+    touch "* marked:'casino-app-new-games-7-579352::escapeartist@relax'"
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::MachineGunUnicorn@mg'"
+    touch "* marked:'Play for Fun'"
     sleep 1
   end
 
@@ -125,7 +160,7 @@ class NewGamesPage < BasePage
 
     touch "* marked:'image close white'"
     sleep 1
-    assert_wait_for_text 'Login'
+    assert_wait_for_text 'Register'
 
   end
 

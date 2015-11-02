@@ -30,5 +30,5 @@ BUILT_PRODUCTS_DIR=$(xcodebuild -scheme "${SCHEME_XC}" -workspace "${PROJ_LOC}" 
 
 APP_BUNDLE_PATH_VAR="${BUILT_PRODUCTS_DIR}"/"${BUILD_CONFIG}"-iphonesimulator/"${APPNAME}".app
 
-echo DEVICE_TARGET='iPhone 6s Plus (9.0)' APP_BUNDLE_PATH=$APP_BUNDLE_PATH_VAR bundle exec cucumber -p ios --tag $2
-DEVICE_TARGET='iPhone 6s Plus (9.0)' APP_BUNDLE_PATH=$APP_BUNDLE_PATH_VAR bundle exec cucumber -p ios --tag $2
+echo DEVICE_TARGET='iPhone 6s Plus (9.1)' APP_BUNDLE_PATH=$APP_BUNDLE_PATH_VAR bundle exec cucumber -p ios --tag $2
+DEVICE_TARGET='iPhone 6s Plus (9.1)' APP_BUNDLE_PATH=$APP_BUNDLE_PATH_VAR bundle exec cucumber -p ios --tag $2
