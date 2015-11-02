@@ -130,3 +130,6 @@ DEPENDENCIES
   plist
   random_data
   run_loop
+
+BUNDLED WITH
+   1.10.6
