@@ -86,15 +86,3 @@ Then(/^I close NGgame11 after a successful launch$/) do
   @newgamesPage.close_NGgame_11
 end
 
-When(/^I launch NGgame12 in New Games$/) do
-  @newgamesPage.launch_NGgame_12
-end
-
-Then(/^I close NGgame12 after a successful launch$/) do
-  @newgamesPage.close_NGgame_12
-<<<<<<< HEAD
-end
-=======
-end
-
->>>>>>> 7a5eee23836bf012566cb763ba0734b6f0857f30
