@@ -14,7 +14,7 @@ BUILD_CONFIG="Debug"
 FEATURES_PATH="features"
 ARCHITECTURE_SELECTED="i386 x86_64"
 APPNAME="Casino-cal"
-PROJ_LOC="../ios-apps/UnibetApps.xcworkspace"
+PROJ_LOC=$3"UnibetApps.xcworkspace"
 
 if [ $1 = "clean" ]
 then
