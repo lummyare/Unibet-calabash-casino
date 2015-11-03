@@ -52,6 +52,7 @@ Feature: New Games game launch
     When I launch NGgame8 in New Games
     Then I close NGgame8 after a successful launch
 
+<<<<<<< HEAD
   @NG_game9
   Scenario: Launch game9 in New Games
     Given I land on games page
@@ -75,6 +76,31 @@ Feature: New Games game launch
     Given I land on games page
     When I launch NGgame12 in New Games
     Then I close NGgame12 after a successful launch
+=======
+#  @NG_game9
+#  Scenario: Launch game9 in New Games
+#    Given I land on games page
+#    When I launch NGgame9 in New Games
+#    Then I close NGgame9 after a successful launch
+#
+#  @NG_game10
+#  Scenario: Launch game10 in New Games
+#    Given I land on games page
+#    When I launch NGgame10 in New Games
+#    Then I close NGgame10 after a successful launch
+#
+#  @NG_game11
+#  Scenario: Launch game11 in New Games
+#    Given I land on games page
+#    When I launch NGgame11 in New Games
+#    Then I close NGgame11 after a successful launch
+#
+#  @NG_game12
+#  Scenario: Launch game12 in New Games
+#    Given I land on games page
+#    When I launch NGgame12 in New Games
+#    Then I close NGgame12 after a successful launch
+>>>>>>> 7a5eee23836bf012566cb763ba0734b6f0857f30
 
   @NG_landscape_game1
   Scenario: Rotate device and launch NGgame1
