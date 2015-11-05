@@ -6,7 +6,6 @@ Feature: New Games game launch
   Scenario: Launch game1 in New Games
     Given I land on games page
     When I launch NGgame1 in New Games
-    Then I close NGgame1 after a successful launch
 
 
   @NG_game2

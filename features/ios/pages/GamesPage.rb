@@ -4,7 +4,7 @@ class GamesPage < BasePage
 
 
   def assert_games_page
-    wait_for_element_exists "* marked:'Unibet picks'", :timeout => 8
+    wait_for_element_exists "* marked:'Log in'", :timeout => 8
 
   end
 

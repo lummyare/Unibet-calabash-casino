@@ -8,7 +8,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::110009@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 5
   end
 
   def close_NGgame_1
@@ -27,7 +27,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::70145@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 5
   end
 
   def close_NGgame_2
@@ -46,7 +46,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::machineGunUnicorn@mg'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 5
   end
 
   def close_NGgame_3
