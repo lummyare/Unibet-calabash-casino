@@ -89,7 +89,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::eyeofthekrakenmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 8
   end
 
   def close_NGgame_5
@@ -109,7 +109,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::happyhalloweenmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 8
   end
 
   def close_NGgame_6
@@ -152,7 +152,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::escapeartist@relax'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 1
+    sleep 8
   end
 
   def close_NGgame_8
@@ -170,6 +170,8 @@ class NewGamesPage < BasePage
     sleep 1
     touch "* marked:'casino-app-new-games-7-579352::eyeofthekraken@playngo'"
     sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 8
   end
 
   def close_NGgame_9
@@ -187,6 +189,8 @@ class NewGamesPage < BasePage
     sleep 1
     touch "* marked:'casino-app-new-games-7-579352::quickhitplatinumb7@jadestone'"
     sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 8
   end
 
   def close_NGgame_10
@@ -204,6 +208,8 @@ class NewGamesPage < BasePage
     sleep 1
     touch "* marked:'casino-app-new-games-7-579352::hooksheroes_not_mobile@netent'"
     sleep 1
+    touch "* marked:'Play for Fun'"
+    sleep 8
   end
 
   def close_NGgame_11
