@@ -5,21 +5,18 @@ Feature: Unibet picks game launch
   @UP_game1
   Scenario: Launch game1 in Unibet Picks
     Given I land on games page
-    When I launch game1 in Unibet Picks
-    Then I close game1 after a successful launch
+    Then I launch game1 in Unibet Picks
 
 
   @UP_game2
   Scenario: Launch game2 in Unibet Picks
     Given I land on games page
-    When I launch game2 in Unibet Picks
-    Then I close game2 after a successful launch
+    Then I launch game2 in Unibet Picks
 
   @UP_game3
   Scenario: Launch game3 in Unibet Picks
     Given I land on games page
-    When I launch game3 in Unibet Picks
-    Then I close game3 after a successful launch
+    Then I launch game3 in Unibet Picks
 
   @UP_game4
   Scenario: Launch game4 in Unibet Picks
