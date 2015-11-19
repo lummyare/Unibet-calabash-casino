@@ -11,7 +11,8 @@ class UnibetPicksPage < BasePage
     touch "* marked:'Play for Fun'"
     rotate :right
     wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 10
-    sleep 8
+    wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 20
+    sleep 2
     touch("webView css:'#translation_loadtime_en_gb'")
     sleep 1
     wait_for_element_exists "webView css:'#loadMessage'", :timeout => 20
@@ -56,9 +57,14 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::eyeofthekrakenmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    rotate :right
-    wait_for_element_exists "webView marked:'CONTINUE'", :timeout => 5
-    sleep 8
+    # rotate :right
+    wait_for_element_exists "all webView css:'#moneyBalanceWrapper'", :timeout => 40
+    sleep 3
+    if element_exists "all webView css:'#moneyBalanceWrapper'"
+      puts ' Eye of The Kraken game launched successfully'
+    else
+      fail '  Eye of The Kraken  not launched'
+    end
   end
 
   # def close_UPgame_3
@@ -102,6 +108,13 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::superflipmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
+    wait_for_element_exists "all webView css:'#moneyBalanceWrapper'", :timeout => 40
+    sleep 3
+    if element_exists "all webView css:'#moneyBalanceWrapper'"
+      puts ' Super Flip game launched successfully'
+    else
+      fail ' Super Flip not launched'
+    end
     sleep 8
   end
 
@@ -121,7 +134,14 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::wildnorthmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    # rotate :right
+    wait_for_element_exists "all webView css:'#moneyBalanceWrapper'", :timeout => 40
+    sleep 3
+    if element_exists "all webView css:'#moneyBalanceWrapper'"
+      puts ' Wild North game launched successfully'
+    else
+      fail ' Wild North not launched'
+    end
   end
 
   def close_UPgame_6
@@ -139,7 +159,14 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::110007@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists "all webView css:'TITLE' {textContent CONTAINS 'ElectricSam'}", :timeout => 40
+    sleep 3
+    if element_exists "all webView css:'TITLE' {textContent CONTAINS 'ElectricSam'}"
+      puts ' ElectricSam game launched successfully'
+    else
+      fail ' ElectricSam not launched'
+    end
+    sleep 2
   end
 
   def close_UPgame_7
@@ -157,7 +184,18 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::bonushe@relax'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    rotate :right
+    wait_for_element_exists "all webView css:'.fg-sound-btn-no'", :timeout => 10
+    sleep 1
+    touch "all webView css:'.fg-sound-btn-no'"
+    sleep 2
+    if element_exists "all webView css:'p' {textContent CONTAINS 'PLAY'}"
+    touch "all webView css:'p' {textContent CONTAINS 'PLAY'}"
+      puts 'Texas Bonus game launched'
+    else
+      fail 'Texas Bonus not launched'
+    end
+
   end
 
   def close_UPgame_8
@@ -176,7 +214,17 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::crystalqueen@relax'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    rotate :right
+    wait_for_element_exists "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}", :timeout => 10
+    sleep 1
+    touch "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}"
+    sleep 2
+    if element_exists "webView css:'#qs_splashscreen_tap'"
+      touch "webView css:'#qs_splashscreen_tap'"
+      puts 'Crystal Queen game launched'
+    else
+      fail 'Crystal Queen not launched'
+    end
   end
 
   def close_UPgame_9
@@ -195,7 +243,8 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::70106@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists "* marked:'No'", :timeout => 5
+
   end
 
   def close_UPgame_10
@@ -213,7 +262,8 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::70138@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists "* marked:'No'", :timeout => 5
+
   end
 
   def close_UPgame_11
@@ -299,7 +349,8 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::trollhuntersmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists  "webView css:'div.modalwin_button' {textContent CONTAINS 'NO'}", :timeout => 20
+
   end
 
   def close_UPgame_15
@@ -341,7 +392,10 @@ class UnibetPicksPage < BasePage
     touch "* marked:'casino-app-unibet-picks-7-579350::europeanroulettemobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists "webView css:'.clicktobet'", :timeout => 15
+    sleep 3
+    touch "webView css:'.clicktobet'"
+    sleep 2
   end
 
   def close_UPgame_17
