@@ -1,6 +1,9 @@
 # encoding: utf-8
 
 require_relative 'page_world'
+require 'calabash-cucumber/cucumber'
+ENV['NO_BRIAR_PREDEFINED_STEPS'] = '1'
+require 'briar/cucumber'
 
 STEP_PAUSE=0.5
 puts "selecting #{ENV['PLATFORM']} platform"
