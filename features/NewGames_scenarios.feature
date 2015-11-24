@@ -21,8 +21,7 @@ Feature: New Games game launch
   @NG_game4
   Scenario: Launch game4 in New Games
     Given I land on games page
-    When I launch NGgame4 in New Games
-    Then I close NGgame4 after a successful launch
+    Then I launch NGgame4 in New Games
 
   @NG_game5
   Scenario: Launch game5 in New Games
@@ -38,8 +37,7 @@ Feature: New Games game launch
   @NG_game7
   Scenario: Launch game7 in New Games
     Given I land on games page
-    When I launch NGgame7 in New Games
-    Then I close NGgame7 after a successful launch
+    Then I launch NGgame7 in New Games
 
   @NG_game8
   Scenario: Launch game8 in New Games

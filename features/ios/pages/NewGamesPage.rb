@@ -2,13 +2,29 @@ require_relative '../base_page'
 
 class NewGamesPage < BasePage
   def launch_NGgame_1
+    # sleep 0.5
+    # scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::110009@nyx', {:scroll_position => :right})
+    # sleep 1
+    # touch "* marked:'casino-app-new-games-7-579352::110009@nyx'"
+    # sleep 1
+    # touch "* marked:'Play for Fun'"
+    # sleep 5
+
     sleep 0.5
     scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::110009@nyx', {:scroll_position => :right})
     sleep 1
     touch "* marked:'casino-app-new-games-7-579352::110009@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 5
+    rotate :right
+    wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 10
+    wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 20
+    sleep 2
+    touch("webView css:'#translation_loadtime_en_gb'")
+    sleep 1
+    wait_for_element_exists "webView css:'#loadMessage'", :timeout => 20
+    touch("webView css:'#loadMessage'")
+    sleep 2
   end
 
   def close_NGgame_1
