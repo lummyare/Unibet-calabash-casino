@@ -12,7 +12,7 @@ ruby gistfile1.rb
 SCHEME_XC="Casino-cal"
 BUILD_CONFIG="Debug"
 FEATURES_PATH="features"
-ARCHITECTURE_SELECTED=x86_64
+ARCHITECTURE_SELECTED="i386 x86_64"
 APPNAME="Casino-cal"
 PROJ_LOC=$3"UnibetApps.xcworkspace"
 

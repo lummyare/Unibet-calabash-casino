@@ -39,23 +39,47 @@ Feature: New Games game launch
     Given I land on games page
     Then I launch NGgame7 in New Games
 
-  @NG_game8
-  Scenario: Launch game8 in New Games
-    Given I land on games page
-    Then I launch NGgame8 in New Games
+#  @NG_game8 @ignore
+#  Scenario: Launch game8 in New Games
+#    Given I land on games page
+#    Then I launch NGgame8 in New Games
 
-  @NG_game9
-  Scenario: Launch game9 in New Games
-    Given I land on games page
-    Then I launch NGgame9 in New Games
+#  @NG_game9
+#  Scenario: Launch game9 in New Games
+#    Given I land on games page
+#    Then I launch NGgame9 in New Games
 
-  @NG_game10
-  Scenario: Launch game10 in New Games
-    Given I land on games page
-    Then I launch NGgame10 in New Games
+#  @NG_game10
+#  Scenario: Launch game10 in New Games
+#    Given I land on games page
+#    Then I launch NGgame10 in New Games
 
-  @NG_game11
-  Scenario: Launch game11 in New Games
-    Given I land on games page
-    Then I launch NGgame11 in New Games
+#  @NG_game11
+#  Scenario: Launch game11 in New Games
+#    Given I land on games page
+#    Then I launch NGgame11 in New Games
 
+  @NG_game12
+  Scenario: Launch game12 in New Games
+    Given I land on games page
+    Then I launch NGgame12 in New Games
+
+  @NG_game13
+  Scenario: Launch game13 in New Games
+    Given I land on games page
+    Then I launch NGgame13 in New Games
+
+  @NG_game14
+  Scenario: Launch game14 in New Games
+    Given I land on games page
+    Then I launch NGgame14 in New Games
+
+  @NG_game15
+  Scenario: Launch game15 in New Games
+    Given I land on games page
+    Then I launch NGgame15 in New Games
+
+  @NG_game16
+  Scenario: Launch game16 in New Games
+    Given I land on games page
+    Then I launch NGgame16 in New Games

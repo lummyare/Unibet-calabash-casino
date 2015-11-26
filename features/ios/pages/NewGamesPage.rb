@@ -17,7 +17,6 @@ class NewGamesPage < BasePage
     sleep 1
     touch "* marked:'Play for Fun'"
     rotate :right
-    wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 10
     wait_for_element_exists "webView css:'#translation_loadtime_en_gb'", :timeout => 20
     sleep 2
     touch("webView css:'#translation_loadtime_en_gb'")
@@ -43,7 +42,7 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::70145@nyx'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 5
+    wait_for_element_exists "* marked:'No'",:timeout => 5
   end
 
   def close_NGgame_2
@@ -57,12 +56,17 @@ class NewGamesPage < BasePage
 
   def launch_NGgame_3
     sleep 0.5
-    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::machineGunUnicorn@mg', {:scroll_position => :right})
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::goldenfarm@relax', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-new-games-7-579352::machineGunUnicorn@mg'"
+    touch "* marked:'casino-app-new-games-7-579352::goldenfarm@relax'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 5
+    rotate :right
+    wait_for_element_exists "all webView css:'BUTTON' {textContent CONTAINS 'NO'}", :timeout => 20
+    sleep 1
+    touch("all webView css:'BUTTON' {textContent CONTAINS 'NO'}")
+    wait_for_element_exists "all webView css:'HTML' {textContent CONTAINS 'Golden Farm'}", :timeout => 10
+    sleep 3
   end
 
   def close_NGgame_3
@@ -105,7 +109,9 @@ class NewGamesPage < BasePage
     touch "* marked:'casino-app-new-games-7-579352::eyeofthekrakenmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    wait_for_element_exists "* marked:'Play for Fun'", :timeout => 5
+    wait_for_element_exists "* marked:'Yes'", :timeout => 5
+
   end
 
   def close_NGgame_5
@@ -119,13 +125,23 @@ class NewGamesPage < BasePage
 
 
   def launch_NGgame_6
+    # sleep 0.5
+    # scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::happyhalloweenmobile@playngo', {:scroll_position => :right})
+    # sleep 1
+    # touch "* marked:'casino-app-new-games-7-579352::happyhalloweenmobile@playngo'"
+    # sleep 1
+    # touch "* marked:'Play for Fun'"
+    # sleep 8
+
     sleep 0.5
     scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::happyhalloweenmobile@playngo', {:scroll_position => :right})
     sleep 1
     touch "* marked:'casino-app-new-games-7-579352::happyhalloweenmobile@playngo'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 8
+    rotate :right
+    wait_for_element_exists "all webView css:'#coinsText'", :timeout => 20
+    sleep 2
   end
 
   def close_NGgame_6
@@ -237,5 +253,82 @@ class NewGamesPage < BasePage
 
   end
 
+  def launch_NGgame_12
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::koiprincess_mobile_html@netent', {:scroll_position => :right})
+    sleep 1
+    touch "* marked:'casino-app-new-games-7-579352::koiprincess_mobile_html@netent'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    wait_for_element_exists "webView css:'.interface-toggleSwitch_loadAnimation'", :timeout => 10
+
+    touch ("webView css:'.interface-toggleSwitch_loadAnimation'")
+    sleep 3
+    touch "webView css:'.interface-homeButton_baseButton'"
+    sleep 0.5
+  end
+
+  def launch_NGgame_13
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::christmasjokermobile@playngo', {:scroll_position => :right})
+    sleep 1
+    touch "* marked:'casino-app-new-games-7-579352::christmasjokermobile@playngo'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    rotate :right
+    wait_for_element_exists "webView css:'YES'", :timeout => 15
+
+    touch ("webView css:'.interface-toggleSwitch_loadAnimation'")
+    sleep 3
+    touch "webView css:'.interface-homeButton_baseButton'"
+    sleep 0.5
+  end
+
+  def launch_NGgame_14
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::sabretooth@relax', {:scroll_position => :right})
+    sleep 1
+    touch "* marked:'casino-app-new-games-7-579352::sabretooth@relax'"
+    sleep 2
+    touch "* marked:'Play for Fun'"
+    rotate :right
+    wait_for_element_exists "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}", :timeout => 10
+    sleep 1
+    touch "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}"
+    sleep 2
+    if element_exists "webView css:'#qs_splashscreen_tap'"
+      touch "webView css:'#qs_splashscreen_tap'"
+      puts 'Razortooth game launched'
+    else
+      fail 'Razortooth not launched'
+    end
+  end
+
+  def launch_NGgame_15
+
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::7319@yggdrasil', {:scroll_position => :right})
+    sleep 1
+    touch "* marked:'casino-app-new-games-7-579352::7319@yggdrasil'"
+    sleep 2
+    touch "* marked:'Play for Fun'"
+    rotate :right
+    wait_for_element_exists "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}", :timeout => 10
+    sleep 1
+    touch "webView css:'.qs_interface_sound_dialog_button' {textContent CONTAINS 'NO'}"
+    sleep 2
+
+  end
+
+  def launch_NGgame_16
+    sleep 0.5
+    scroll_to_collection_view_item_with_mark('casino-app-new-games-7-579352::7316@yggdrasil', {:scroll_position => :right})
+    sleep 1
+    touch "* marked:'casino-app-new-games-7-579352::7316@yggdrasil'"
+    sleep 1
+    touch "* marked:'Play for Fun'"
+    wait_for_element_exists "webView css:'LOBBY'", :timeout => 10
+
+  end
 
 end

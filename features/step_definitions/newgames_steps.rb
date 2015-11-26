@@ -86,3 +86,23 @@ Then(/^I close NGgame11 after a successful launch$/) do
   @newgamesPage.close_NGgame_11
 end
 
+
+Then(/^I launch NGgame12 in New Games$/) do
+  @newgamesPage.launch_NGgame_12
+end
+
+Then(/^I launch NGgame13 in New Games$/) do
+  @newgamesPage.launch_NGgame_13
+end
+
+Then(/^I launch NGgame14 in New Games$/) do
+  @newgamesPage.launch_NGgame_14
+end
+
+Then(/^I launch NGgame15 in New Games$/) do
+  @newgamesPage.launch_NGgame_15
+end
+
+Then(/^I launch NGgame16 in New Games$/) do
+  @newgamesPage.launch_NGgame_16
+end
