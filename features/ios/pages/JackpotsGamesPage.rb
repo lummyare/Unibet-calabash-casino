@@ -38,9 +38,13 @@ class JackpotsGamesPage < BasePage
     rotate(:right)
     sleep 2
     touch ("webView css:'P' {textContent CONTAINS 'OK'}")
-    sleep 0.5
-    touch ("webView css:'.close-tutorial'")
-    sleep 0.5
+    sleep 2
+    if element_exists ("webView css:'.close-tutorial'")
+      touch ("webView css:'.close-tutorial'")
+    else
+      puts 'tutorial not displayed'
+    end
+    sleep 1
     swipe :right
     sleep 0.5
     touch ("webView css:'.backtolobby'")
@@ -62,15 +66,19 @@ class JackpotsGamesPage < BasePage
     scroll_to_collection_view_item_with_mark('casino-app-jackpots-7-579353::majorMillions@mg', {:scroll_position => :right})
     sleep 1
     touch "* marked:'casino-app-jackpots-7-579353::majorMillions@mg'"
-    sleep 1
+    wait_for_element_exists "* marked:'Play for Fun'", :timeout => 5
     touch "* marked:'Play for Fun'"
     sleep 1
     rotate(:right)
     sleep 2
     touch ("webView css:'P' {textContent CONTAINS 'OK'}")
-    sleep 0.5
-    touch ("webView css:'.close-tutorial'")
-    sleep 0.5
+    sleep 2
+    if element_exists ("webView css:'.close-tutorial'")
+      touch ("webView css:'.close-tutorial'")
+    else
+      puts 'tutorial not displayed'
+    end
+    sleep 1
     swipe :right
     sleep 0.5
     touch ("webView css:'.backtolobby'")
@@ -96,7 +104,7 @@ class JackpotsGamesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 1
     rotate(:right)
-    sleep 10
+    wait_for_element_exists "webView css:'.fg-sound-btn-yes'", :timeout => 11
     touch ("webView css:'.fg-sound-btn-yes'")
     sleep 1
   end
@@ -110,7 +118,7 @@ class JackpotsGamesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 1
     rotate(:right)
-    sleep 10
+    wait_for_element_exists "webView css:'.fg-sound-btn-yes'", :timeout => 11
     touch ("webView css:'.fg-sound-btn-yes'")
     sleep 1
     end

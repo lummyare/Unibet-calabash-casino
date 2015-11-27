@@ -34,10 +34,10 @@ class ExclusiveGamesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 50
-    sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
+    # wait_for_element_exists "* marked:'NO'", :timeout => 50
+    # sleep 2
+    # touch "* marked:'NO'"
+    wait_for_element_exists "all webView css:'#iOS7HelperContainer'",:timeout => 5
 
     sleep 1
   end
@@ -52,8 +52,11 @@ class ExclusiveGamesPage < BasePage
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 5
-    # wait_for_element_exists "webView css:'.modalwin_button' {textContent CONTAINS 'NO'}", :timeout => 30
-    # sleep 1
+    rotate(:right)
+
+    wait_for_element_exists "all webView css:'#iOS7HelperContainer'",:timeout => 5
+
+    sleep 1
 
   end
 
@@ -67,7 +70,7 @@ class ExclusiveGamesPage < BasePage
     touch "* marked:'casino-app-exclusives-7-579354::bjbuster@relax'"
     sleep 1
     touch "* marked:'Play for Fun'"
-    sleep 5
+    sleep
     # wait_for_element_exists "webView css:'.modalwin_button' {textContent CONTAINS 'NO'}", :timeout => 30
     # sleep 1
 
