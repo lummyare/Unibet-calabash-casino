@@ -9,9 +9,9 @@ class BiggestWinsWeeklyPage < BasePage
     scroll "scrollView",:down
 
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-biggest-wins-weekly-7-579361::megafortunedreams_mobile_html@netent', {:scroll_position => :right})
+    scroll_to_collection_view_item_with_mark('casino-app-biggest-wins-weekly-7-579361::twinspin_mobile_html@netent', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-biggest-wins-weekly-7-579361::megafortunedreams_mobile_html@netent'"
+    touch "* marked:'casino-app-biggest-wins-weekly-7-579361::twinspin_mobile_html@netent'"
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 2
@@ -57,9 +57,9 @@ class BiggestWinsWeeklyPage < BasePage
     scroll "scrollView",:down
 
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-biggest-wins-weekly-7-579361::', {:scroll_position => :right})
+    scroll_to_collection_view_item_with_mark('casino-app-biggest-wins-weekly-7-579361::twinspin_mobile_html@netent', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-biggest-wins-weekly-7-579361::'"
+    touch "* marked:'casino-app-biggest-wins-weekly-7-579361::twinspin_mobile_html@netent'"
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 2
