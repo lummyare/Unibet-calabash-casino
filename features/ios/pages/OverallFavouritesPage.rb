@@ -296,10 +296,11 @@ class OverallFavouritesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 20
+    wait_for_element_exists  "webView css:'div.modalwin_button' {textContent CONTAINS 'NO'}", :timeout => 20
     sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 10
+    touch "webView css:'div.modalwin_button' {textContent CONTAINS 'NO'}"
+
+    # wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 10
 
     sleep 1
 
@@ -347,7 +348,7 @@ class OverallFavouritesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 10
+    wait_for_element_exists "* marked:'NO'", :timeout => 20
     sleep 2
     touch "* marked:'NO'"
     wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
@@ -396,12 +397,11 @@ class OverallFavouritesPage < BasePage
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 2
-    rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 10
+    wait_for_element_exists "* marked:'No'", :timeout => 20
     sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
-
+    touch "* marked:'No'"
+    wait_for_element_exists "webView css:'.lobby-btn' {textContent CONTAINS 'Money Play'}",:timeout => 10
+    touch "webView css:'.lobby-btn' {textContent CONTAINS 'Money Play'}"
     sleep 1
 
   end
@@ -522,12 +522,12 @@ class OverallFavouritesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 10
+    wait_for_element_exists "all webView css:'#overlay-message' {textContent Contains 'Tap to Close'}", :timeout => 20
     sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
-
-    sleep 1
+    # touch "* marked:'NO'"
+    # wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
+    #
+    # sleep 1
 
   end
 
@@ -547,12 +547,9 @@ class OverallFavouritesPage < BasePage
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 10
+    wait_for_element_exists "all webView css:'#lobbyImg'", :timeout => 20
     sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
 
-    sleep 1
 
   end
 
@@ -565,9 +562,9 @@ class OverallFavouritesPage < BasePage
     sleep 1
     scroll "scrollView",:down
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-overall-favourites-7-582643::zeus3@jadestone', {:scroll_position => :right})
+    scroll_to_collection_view_item_with_mark('casino-app-overall-favourites-7-582643::twinspin_mobile_html@netent', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-overall-favourites-7-582643::zeus3@jadestone'"
+    touch "* marked:'casino-app-overall-favourites-7-582643::twinspin_mobile_html@netent'"
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 2
@@ -590,20 +587,18 @@ class OverallFavouritesPage < BasePage
     sleep 1
     scroll "scrollView",:down
     sleep 1
-    scroll_to_collection_view_item_with_mark('casino-app-overall-favourites-7-582643::ragingrhino@jadestone', {:scroll_position => :right})
+    scroll_to_collection_view_item_with_mark('casino-app-overall-favourites-7-582643::gameOfThrones_Ways@mg', {:scroll_position => :right})
     sleep 1
-    touch "* marked:'casino-app-overall-favourites-7-582643::ragingrhino@jadestone'"
+    touch "* marked:'casino-app-overall-favourites-7-582643::gameOfThrones_Ways@mg'"
     sleep 1
     touch "* marked:'Play for Fun'"
     sleep 2
     rotate(:right)
-    wait_for_element_exists "* marked:'NO'", :timeout => 10
     sleep 2
-    touch "* marked:'NO'"
-    wait_for_element_exists "webView css:'p' {textContent CONTAINS 'PLAY'}",:timeout => 5
+    swipe :right
 
-    sleep 1
-
+    wait_for_element_exists "all webView css:'#overlay-message' {textContent Contains 'Tap to Close'}", :timeout => 20
+    sleep 10
   end
 
 

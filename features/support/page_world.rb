@@ -14,6 +14,7 @@ module TestModule
     @overallfavouritesPage||=OverallFavouritesPage.new
     @biggestwinsalltimePage||=BiggestWinsAllTimePage.new
     @biggestwinsweeklyPage||=BiggestWinsWeeklyPage.new
+    @searchPage||=SearchPage.new
 
 
 
