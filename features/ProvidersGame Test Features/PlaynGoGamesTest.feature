@@ -27,45 +27,45 @@ Feature: Overall Favourites Games game launch
   |Cats & Cash              |
   |Danish Flip              |
   |Deuces wild              |
-  Dragon Ship
-  Easter Eggs
-  Enchanted Crystals
-  Enchanted Meadows
-  European BJ multihand
-  European Roulette
-  Fortune teller
-  French Roulette La Partage
-  Gemix
-  Gold trophy
-  Golden Ticket
-  Hi- Low
-  Hole in One
-  Irish gold
-  Jacks or Better multihand
-  Jewel Box
-  Joker Poker
-  Jolly Roger
-  Keno
-  Lady of Fortune
-  Leprechauns goes Egypt
-  Lucky diamonds
-  Merry Xmas
-  Mini Baccarat
-  Mystery Joker
-  Myth
-  Ninja Fruits
-  Pearl lagoon
-  Pearls of India
-  Photo Safari
-  Pimped
-  Rage to Riches
-  Riches of Ra
-  Single Deck Blackjack MH
-  Space Race
-  Spin Party
-  Super Flip
-  Tower Quest
-  Troll Hunters
-  Wild Blood
-  Wild melon
-  Wild North
+#  Dragon Ship
+#  Easter Eggs
+#  Enchanted Crystals
+#  Enchanted Meadows
+#  European BJ multihand
+#  European Roulette
+#  Fortune teller
+#  French Roulette La Partage
+#  Gemix
+#  Gold trophy
+#  Golden Ticket
+#  Hi- Low
+#  Hole in One
+#  Irish gold
+#  Jacks or Better multihand
+#  Jewel Box
+#  Joker Poker
+#  Jolly Roger
+#  Keno
+#  Lady of Fortune
+#  Leprechauns goes Egypt
+#  Lucky diamonds
+#  Merry Xmas
+#  Mini Baccarat
+#  Mystery Joker
+#  Myth
+#  Ninja Fruits
+#  Pearl lagoon
+#  Pearls of India
+#  Photo Safari
+#  Pimped
+#  Rage to Riches
+#  Riches of Ra
+#  Single Deck Blackjack MH
+#  Space Race
+#  Spin Party
+#  Super Flip
+#  Tower Quest
+#  Troll Hunters
+#  Wild Blood
+#  Wild melon
+#  Wild North
